@@ -53,9 +53,9 @@ width: 300px;
     font-size: 90%;
     text-align: right; 
 	margin: 0;
-	margin-top: 5em; 
+	margin-top: .5em; 
 	border-top: 2px solid grey;
-	padding: 7em;
+	padding: .7em;
 	clear: left;
 
 
@@ -88,3 +88,7 @@ border: 1px solid black;
 	
 .alignRight {
 	text-align: right; }
+
+input{
+	width: 70px;
+}

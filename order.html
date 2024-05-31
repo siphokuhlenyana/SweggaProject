@@ -11,9 +11,23 @@
 
 <body>
 <div id="page">
+	
+	<div id="sidebar"><img src="https://github.com/siphokuhlenyana/sweggaPictures/blob/main/swegga.jpg?raw=true" alt=""></div>
 <div id="banner"><img src="https://github.com/siphokuhlenyana/sweggaPictures/blob/main/delivery.gif?raw=true" alt=""></div>
-	<div id="navigation"><img src="https://github.com/siphokuhlenyana/sweggaPictures/blob/main/links.gif?raw=true" alt=""></div>
-<div id="sidebar"><img src="https://github.com/siphokuhlenyana/sweggaPictures/blob/main/swegga.jpg?raw=true" alt=""></div>
+	<div id="navigation"><img src="https://github.com/siphokuhlenyana/sweggaPictures/blob/main/links.gif?raw=true" alt="navigation" usemap="#navbar" width="560" height="56">
+
+<map name="navbar">
+  <area shape="rect" coords="10,5,95,35" alt="Home" href="order.html">
+  <area shape="rect" coords="105,5,190,35" alt="Services" href="services.html">
+  <area shape="rect" coords="205,5,300,35" alt="Products" href="products.html">
+  <area shape="rect" coords="310,5,440,35" alt="Order Status" href="orderStatus.html">
+  <area shape="rect" coords="450,5,555,35" alt="Contact Us" href="contactUs.html">
+
+
+
+</map>
+	</div>
+
 	<div id="main">
 		<form action="" name="orders"></form>
 		<table>
@@ -27,32 +41,60 @@
 		<th>Total</th>
 
 		<tr>
-    <td>Female Ski Jackets</td>
-    <td>Small</td>
-    <td>Red</td>
+    <td><a href="female.html">Female Ski Jackets</td>
+
+		<td><select name="sizes" id="size">
+			<option value="small">Small</option>
+		  <option value="medium">Medium</option>
+		  <option value="pumpernickel">Large</option>
+		  
+		</select>
+		</td>
+		<td><select name="colours" id="colour">
+			<option value="red">Red</option>
+		  <option value="pink">Pink</option>
+		  <option value="black">Black</option>
+		  
+		</select>
+		</td>
+    
     <td>150.95</td>
-    <td>2</td>
-    <td>R 301.90</td>
+    <td><input type="text" value="0"></td>
+    <td id="firstTot">R0.00 </td>
 		</tr>
 
 		<tr>
-			<td>Male Ski Jacket</td>
-			<td>Small</td>
-			<td>Red</td>
+			<td><a href="male.html">Male Ski Jacket</td>
+				<td><select name="sizes" id="size">
+					<option value="small">Small</option>
+				  <option value="medium">Medium</option>
+				  <option value="pumpernickel">Large</option>
+				  
+				</select>
+				</td>
+				<td><select name="colours" id="colour">
+					<option value="red">Red</option>
+				  <option value="blue">Blue</option>
+				  <option value="white">White</option>
+				  
+				</select>
+				</td>
+			
 			<td>180.95</td>
-			<td>4</td>
-			<td>R 723.80</td>
+			<td><input type="text" value="0"></td>
+			<td id="secondTot">R0.00 </td>
 		</tr>
 		<tr>
-         <td>Click to confirm and process your order</td>
-		 <td><button>Total Price</button></td>
-		 <td>R 1025.70</td>
+         <td colspan="4">Click to confirm and process your order</td>
+		 <td><button type="button">Total Price</button></td>
+		 <td>R0.00</td>
 
 		</tr>
 		</table>
 
 	</div>
-	<div class="copyright"> <footer>&copy;Swegga Fashion -Examination number</footer></div>
+	<div class="copyright"> <footer>&copy;Swegga Fashion -SIPHOKUHLE NYANA</footer></div>
 </div>
+<script src="./order.js"></script>
 </body>
 </html>
